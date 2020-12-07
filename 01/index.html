@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+      max-width: 1024px;
+      height: 768px;
+      background: url(./img/bground.png);
+      margin: 0 auto;
+    }
+    .header {
+      width: 1000px;
+      height: 211px;
+      background: url(./img/header.png)
+    }
+    .title {
+      width: 740px;
+      height: 66px;
+      color: #2D509B;
+      font-size: 32px;
+      margin-top: 39px;
+      margin-left: 70px;
+    }
+    .circle1 {
+      position: absolute;
+      width: 317px;
+      height: 317px;
+      margin-top: -40px;
+      margin-left: 196px;
+      background: url(./img/big.png)
+    }
+    .circle2 {
+      position: absolute;
+      width: 204px;
+      height: 204px;
+      margin-top: -10px;
+      margin-left: 204px;
+      background: url(./img/medium.png)
+    }
+    .circle3 {
+      position: absolute;
+      width: 142px;
+      height: 142px;
+      margin-top: 10px;
+      margin-left: 361px;
+      background: url(./img/small.png)
+    }
+    .text12{
+      display: block;
+      width: 44px;
+      height: 54px;
+      margin-left: 190px;
+      margin-top: 200px;
+      background: url(./img/12.svg) no-repeat center;
+      background-size: 44px 66px;
+    }
+    .text6{
+      display: block;
+      width: 32px;
+      height: 50px;
+      margin-left: 80px;
+      margin-top: 70px;
+      background: url(./img/6.svg) no-repeat center;
+      background-size: 25px 60px;
+    }
+    .text3{
+      display: block;
+      width: 25px;
+      height: 35px;
+      margin-left: 60px;
+      margin-top: 52px;
+      background: url(./img/3.svg) no-repeat center;
+      background-size: 18px 45px;
+    }
+    .wrapperLines {
+      position:absolute;
+      margin-top: 280px;
+      margin-left: 80px;
+    }
+    .text {
+      color: #D0691C;
+      display: block;
+      width: 130px;
+      height: 50px;
+      font-size: 24px;
+    }
+    .firstLine {
+      margin-bottom: 20px;
+    }
+    .firstLineEl {
+      display: block;
+      position: absolute;
+      width: 350px;
+      height: 30px;
+      top: -0.5%;
+      left: 99%;
+      background: no-repeat url(./img/fLine.png);
+      margin-top: 35px;
+    }
+    .firstLineBullets {
+      display: block;
+      position: absolute;
+      width: 340px;
+      height: 35px;
+      top: 17%;
+      left: 95%;
+      background: no-repeat url(./img/bullits.svg);
+      background-size: contain;
+    }
+    .firstLineMarker {
+      display: block;
+      position: absolute;
+      width: 340px;
+      height: 30px;
+      top: 15%;
+      left: 320%;
+      background: no-repeat url(./img/fMarker.png);
+      background-size: contain;
+    }
+    .secondLine {
+      margin-top: 40px;
+    }
+    .secondLineEl {
+      display: block;
+      position: absolute;
+      width: 335px;
+      height: 30px;
+      top: 23%;
+      left: 99%;
+      background: no-repeat url(./img/secondLine.png);
+      margin-top: 50px;
+    }
+    .secondLineColor {
+      display: block;
+      position: absolute;
+      width: 350px;
+      height: 30px;
+      top: 23%;
+      left: 99%;
+      background: no-repeat url(./img/secondColorLine.png);
+      margin-top: 50px;
+    }
+    .secondLineBullets {
+      display: block;
+      position: absolute;
+      width: 340px;
+      height: 30px;
+      top: 48%;
+      left: 97%;
+      background: no-repeat url(./img/bullits.svg);
+      background-size: contain;
+    }
+    .secondLineMarker {
+      display: block;
+      position: absolute;
+      width: 340px;
+      height: 30px;
+      top: 45%;
+      left: 220%;
+      background: no-repeat url(./img/secondMarker.png);
+      background-size: contain;
+    }
+    .thirdLine {
+      margin-top: 15px;
+    }
+    .thirdLineEl {
+      display: block;
+      position: absolute;
+      width: 334px;
+      height: 30px;
+      top: 60%;
+      left: 99%;
+      background: no-repeat url(./img/secondLine.png);
+      margin-top: 35px;
+    }
+    .thirdLineColor {
+      display: block;
+      position: absolute;
+      width: 330px;
+      height: 90px;
+      top: 52%;
+      left: 99%;
+      background: no-repeat url(./img/thirdColorLine.png);
+      margin-top: 50px;
+    }
+    .thirdLineBullets {
+      display: block;
+      position: absolute;
+      width: 340px;
+      height: 30px;
+      top: 77%;
+      left: 96%;
+      background: no-repeat url(./img/bullits.svg);
+      background-size: contain;
+    }
+    .thirdLineMarker {
+      display: block;
+      position: absolute;
+      width: 340px;
+      height: 30px;
+      top: 75%;
+      left: 156%;
+      background: no-repeat url(./img/thirdMarker.png);
+      background-size: contain;
+    }
+    .num12{
+      position: absolute;
+      top: 0%;
+      left: 325%;
+      width: 20px;
+      height: 30px;
+      background: url(./img/12num.svg) no-repeat center;
+      background-size: contain;
+    }
+    .num6{
+      position: absolute;
+      top: 33%;
+      left: 225%;
+      width: 20px;
+      height: 20px;
+      background: url(./img/6num.svg) no-repeat center;
+      background-size: contain;
+    }
+    .num3{
+      position: absolute;
+      top: 63%;
+      left: 160%;
+      width: 20px;
+      height: 20px;
+      background: url(./img/3num.svg) no-repeat center;
+      background-size: contain;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="title">Скольким своим пациентам в течение последнего месяца 
+        Вы поставили диагноз мКРР?
+      </div>
+    </header>
+    <main>
+      <div class="circles">
+        <span class="circle1"><span class="text12"></span></span>
+        <span class="circle2"><span class="text6"></span></span>
+        <span class="circle3"><span class="text3"></span></span>
+      </div>
+      <div class="wrapperLines">
+        <div class="firstLine">
+          <span class="text">Число пациентов</span>
+          <span class="firstLineEl"></span>
+          <span class="firstLineBullets"></span>
+          <span class="firstLineMarker"></span>
+        </div>
+        <div class="secondLine">
+          <span class="text">KRAS</span>
+          <span class="secondLineEl"></span>
+          <span class="secondLineColor"></span>
+          <span class="secondLineBullets"></span>
+          <span class="secondLineMarker"></span>
+        </div>
+        <div class="thirdLine">
+          <span class="text">NRAS</span>
+          <span class="thirdLineEl"></span>
+          <span class="thirdLineColor"></span>
+          <span class="thirdLineBullets"></span>
+          <span class="thirdLineMarker"></span>
+        </div>
+        <div class='num12'></div>
+        <div class='num6'></div>
+        <div class='num3'></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
