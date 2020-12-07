@@ -11,15 +11,49 @@
 </head>
 <body>
     <div id="background">
-
+        <div class="container">
+            <div class="wrapper1">
+                <div class="el element1"></div>
+                <div class="el element2"></div>
+                <div class="el element3"></div>
+                <div class="el element4"></div>
+                <button id="btn">Click CSS</button>
+                <button id="btn-reset">Reset CSS</button>
+            </div>
+            <div class="wrapper2">
+                <div class="el element1"></div>
+                <div class="el element2"></div>
+                <div class="el element3"></div>
+                <div class="el element4"></div>
+                <button id="btn-jquery">Click Query</button>
+                <button id="btn-jquery-reset">Reset Query</button>
+            </div>
+        </div>
     </div>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/jquery-ui-1.10.4.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script>
-        $(function () {
-           
-        });
+        const btn = document.querySelector('#btn'),
+        btnReset = document.querySelector('#btn-reset'),
+        el1 = document.querySelector('.element1'),
+        el2 = document.querySelector('.element2'),
+        el3 = document.querySelector('.element3'),
+        el4 = document.querySelector('.element4');
+
+        btn.onclick = function css() {
+            el1.style.opacity = 0.0001;
+            el2.classList.add('active');
+            el3.classList.add('active');
+            el4.classList.add('active');
+        };
+
+        btnReset.onclick = function css() {
+            el1.style.opacity = 1;
+            el2.classList.remove('active');
+            el3.classList.remove('active');
+            el4.classList.remove('active');
+        };
     </script>
 </body>
 

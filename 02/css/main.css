@@ -135,3 +135,49 @@ body {
     top: 0px;
     background-color: aliceblue
 }
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.el {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    transition: all 2s;
+
+}
+.element1 {
+    background: red;
+}
+.element1:hover {
+    opacity: 0.0001;
+}
+.element2 {
+    background: green;
+}
+.element2:hover {
+    transform: skew(-45deg, 45deg);
+}
+.element2.active {
+    transform: skew(-45deg, 45deg);
+}
+.element3 {
+    background: blue;
+}
+.element3:hover {
+    transform: scale(2);
+}
+.element3.active {
+    transform: scale(2);
+}
+.element4 {
+    background: black;
+}
+
+.element4:hover {
+    transform: translate(120px, 50%);
+}
+.element4.active {
+    transform: translate(120px, 50%);
+}
+
