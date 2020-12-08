@@ -146,38 +146,47 @@ body {
     transition: all 2s;
 
 }
-.element1 {
+.element1,
+.el1 {
     background: red;
 }
-.element1:hover {
+.element1:hover,
+.el1:hover {
     opacity: 0.0001;
 }
-.element2 {
+.element2,
+.el2 {
     background: green;
 }
-.element2:hover {
+.element2:hover,
+.el2:hover {
     transform: skew(-45deg, 45deg);
 }
 .element2.active {
     transform: skew(-45deg, 45deg);
 }
-.element3 {
+.element3,
+.el3 {
     background: blue;
 }
-.element3:hover {
+.element3:hover,
+.el3:hover {
     transform: scale(2);
 }
 .element3.active {
     transform: scale(2);
 }
-.element4 {
+.element4,
+.el4 {
     background: black;
 }
 
-.element4:hover {
+.element4:hover,
+.el4:hover {
     transform: translate(120px, 50%);
 }
-.element4.active {
+.element4.active,
+.el4.active {
     transform: translate(120px, 50%);
 }
 
